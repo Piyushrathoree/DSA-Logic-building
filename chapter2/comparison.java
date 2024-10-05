@@ -9,6 +9,9 @@ class comparison{
        }else{
         System.out.println("b is greater than a");
        }
+
+       sc.close();
+       
     }
 
 }
