@@ -22,7 +22,7 @@ int decToBinary(int n) {
 
     while(n > 0) {
         //taking out the remainder and dividing the n (decimal value) to traverse through the whole number
-        int rem = n % 2 ;
+        int rem = n % 2 ; // e.g n = 10 
         n /= 2 ;
 
         //adding the value to the ans and then also multiplying it with 10^pow
