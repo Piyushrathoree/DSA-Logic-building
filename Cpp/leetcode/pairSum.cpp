@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//brute force approach
 vector<int> pairSum(vector<int> arr, int target) {
     vector<int> ans;
     int n = arr.size();
@@ -25,11 +26,29 @@ vector<int> pairSum(vector<int> arr, int target) {
     cout<< endl;
     return ans;
 }
+
+//optimal approach O(n)
+vector<int> pairSum2(vector<int> arr, int target){
+    int n=arr.size();
+    vector <int> ans;
+    int i=0, j=n-1;
+    while(i<j){
+        if (arr[i]+arr[j] > target){
+            j--;
+        }else if(arr[i]+arr[j] < target){
+            i++;
+        }else{
+            ans.push_back(i);
+            ans.push_back(j);
+            return ans;
+        }
+    }
+}
     
 int main(){
     vector<int> arr ={2,7,11,15};
     int target = 17;
 
-    pairSum(arr , target);
-    
+    vector<int> ans =pairSum2(arr , target);
+    cout<<ans[0] <<","<<ans[1]<<endl;
 }
