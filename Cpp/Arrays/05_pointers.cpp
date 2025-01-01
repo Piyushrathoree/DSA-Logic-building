@@ -17,5 +17,10 @@ int main(){
         cout<< prepareOrders(10)[i] << " ";
     }
     cout<<endl;
+
+    delete[] prepareOrders(10); // here we delete or clean the dynamic memory which is allocated in the prepareOrders() function 
     return 0;
 }
+// now there is one more thing to know about the pointers or dynamically allocated memory values  and this memory doesn't get cleaned up by cpp we have to do it manually
+// which is whenever we allocate dynamic memory we have to deallocate the memory as well or do the cleanup 
+// it can be done using delete keyword 
