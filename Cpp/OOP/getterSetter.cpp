@@ -16,10 +16,11 @@ class one {
         (name == "") ? cout << " name : xxx" << endl : cout << " Name: " << name << endl; 
         cout << " Value: " << value << endl;
     }
+    //getter is used to get any value in the code 
     void getName() {
         cout << "Name: " << name << endl;
     }
-
+    //setter is used to set any value in the code
     void setName(string newName) {
         name = newName;
     }
