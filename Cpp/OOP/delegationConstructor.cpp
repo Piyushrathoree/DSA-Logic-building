@@ -5,7 +5,7 @@ class One{
     string a;
     int b;
     public:
-    //delegation constructor - for setting default values which is not given by user 
+    //delegation constructor - for setting default values which is not given by user here only one value is given by the use so set another value as default
         One(string a): One(a , 1 ){}
 
     One(string a, int b){
