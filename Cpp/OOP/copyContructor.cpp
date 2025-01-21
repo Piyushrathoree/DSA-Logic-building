@@ -21,7 +21,7 @@ class copyConstructor {
 
 
     // the below function or contructor is a destructor because it do the cleanup in the code of dynamic memory allocation and called as destructor
-    // ~ this sign in used in the starting to show that it is a destructor
+    // ( ~ ) this sign in used in the starting to show that it is a destructor
     ~copyConstructor() {
         cout << "destructor called " << endl;
         delete value;
