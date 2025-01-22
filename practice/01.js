@@ -14,4 +14,3 @@ const smallest=Math.min(...rev_array)
 console.log(smallest);
 
 
-//
