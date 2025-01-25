@@ -1,4 +1,15 @@
 //prime number print upto 50
+function isPrime(n){
+    for(i = 2 ; i < n ; i++){
+      if(i%n==0){
+        return false
+      }
+    }
+    return true;
+}
+
+isPrime(13)
+
 
 //find any prime number in the array
 
