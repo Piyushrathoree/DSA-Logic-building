@@ -1,14 +1,16 @@
 //prime number print upto 50
 function isPrime(n){
     for(i = 2 ; i < n ; i++){
-      if(i%n==0){
-        return false
+      if(n % i===0){
+        console.log("it is not a prime number");
+        return
       }
     }
-    return true;
+    console.log("yes it is a prime number");
+    
 }
 
-isPrime(13)
+isPrime(15)
 
 
 //find any prime number in the array
@@ -89,13 +91,13 @@ function replacingWord() {
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const word1 = "fizz";
   const word2 = "buzz";
-  arr.forEach((i)=>{
+  for(i = 0; i < arr.length; i++){
     if(arr[i]% 3 === 0){
         arr[i] = word1;
     }else if(arr[i]%5 === 0){
         arr[i] = word2
     }
-  })
+}
 console.log(arr);
 
 }
