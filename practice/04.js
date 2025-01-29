@@ -18,7 +18,6 @@ moveZeros([3, 0, 5, 3, 8, 0, 8, 1, 5]);
 
 //fina the missing number from continous array
 function findMissingNum(arr) {
-    let min = Math.min(...arr);
     let max = Math.max(...arr);
     //finding the sum of countinous values
     let actualSum = (max * (max + 1)) / 2;
