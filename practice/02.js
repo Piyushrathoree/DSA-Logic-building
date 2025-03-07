@@ -10,7 +10,7 @@ function isPrime(n){
     
 }
 
-isPrime(15)
+isPrime(97)
 
 
 //find any prime number in the array
